@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            background-color: rgb(212, 164, 7);
+            padding: 25px;
+            margin: 50px;
+            border-color: rgb(100, 220, 20);
+            border-width: 5px;
+            border-style: solid;
+            border-style: groove;
+            cursor: pointer;
+            display: block;
+        }
+        
+        #btn:hover {
+            background-color: red;
+            color: black;
+        }
+        
+        #btn:active {
+            font-weight: bold;
+            font-size: 25px
+        }
+        
+        #btn::-moz-focus-inner {
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <button id="btn" onclick="document.getElementById('demo').innerHTML = Date()">Click me</button>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
